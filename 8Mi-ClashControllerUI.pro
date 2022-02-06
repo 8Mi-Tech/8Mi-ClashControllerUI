@@ -8,7 +8,7 @@ QT       += core gui webenginewidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = 8Mi-ClashControlerUI
+TARGET = 8Mi-ClashControllerUI
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use

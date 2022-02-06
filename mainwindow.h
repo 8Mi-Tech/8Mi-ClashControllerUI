@@ -21,8 +21,8 @@ public:
     ~MainWindow();
 
 private:
-    Widget *w;
-    QWidget *m_mainWidget;
+    BMi_Clash_Widget *w;
+    DWidget *m_mainWidget;
     QVBoxLayout *m_mainLayout;
     //QCefWebView *m_webView;
 };

@@ -1,14 +1,14 @@
 #include "widget.h"
 #include "ui_widget.h"
 
-Widget::Widget(QWidget *parent) :
+BMi_Clash_Widget::BMi_Clash_Widget(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::Widget)
+    ui(new Ui::BMi_Clash_Widget)
 {
     ui->setupUi(this);
 }
 
-Widget::~Widget()
+BMi_Clash_Widget::~BMi_Clash_Widget()
 {
     delete ui;
 }

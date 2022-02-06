@@ -2,6 +2,7 @@
 #include <DApplication>
 #include <QDesktopWidget>
 #include <DWidgetUtil>  //Dtk::Widget::moveToCenter(&w); 要调用它，就得引用DWidgetUtil
+#include <QWebEngineView>
 //#include <qcef/qcef_util.h>
 
 
@@ -16,12 +17,13 @@ int main(int argc, char *argv[])
      dtk.setOrganizationName("8Mi-Tech");
      dtk.setApplicationVersion(DApplication::buildVersion("1.0"));
      dtk.setApplicationAcknowledgementPage("https://blog.8mi.tech");
-     //dtk.setProductIcon(QIcon(":/logo.png"));  //设置Logo
-     dtk.setProductName("8Mi-SimpleBrowser");
-     dtk.setApplicationName("8Mi-SimpleBrowser"); //只有在这儿修改窗口标题才有效
+     dtk.setProductIcon(QIcon(":/logo.png"));  //设置Logo
+     dtk.setProductName("8Mi-ClashControllerUI");
+     dtk.setApplicationName("8Mi-ClashControllerUI"); //只有在这儿修改窗口标题才有效
      dtk.setApplicationLicense("GPL-3.0");
-     dtk.setApplicationDescription("8Mi-SimpleBrowser只是一个单页面的CEF的浏览器");
+     dtk.setApplicationDescription("本程序配合8Mi-ClashController这个项目使用");
      dtk.setApplicationAcknowledgementVisible(true);
+     dtk.setWindowIcon(QIcon(":/logo.png"));
 
     MainWindow w;
     w.setMinimumSize(800, 600);
@@ -31,8 +33,5 @@ int main(int argc, char *argv[])
 
     //让打开时界面显示在正中
     Dtk::Widget::moveToCenter(&w);
-
-    //QCefBindApp(&dtk);
-
     return dtk.exec();
 }

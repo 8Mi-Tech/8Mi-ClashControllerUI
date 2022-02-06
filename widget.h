@@ -4,19 +4,19 @@
 #include <DWidget>
 
 namespace Ui {
-class Widget;
+class BMi_Clash_Widget;
 }
 
-class Widget : public QWidget
+class BMi_Clash_Widget : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit Widget(QWidget *parent = 0);
-    ~Widget();
+    explicit BMi_Clash_Widget(QWidget *parent = 0);
+    ~BMi_Clash_Widget();
 
 private:
-    Ui::Widget *ui;
+    Ui::BMi_Clash_Widget *ui;
 };
 
 #endif // WIDGET_H

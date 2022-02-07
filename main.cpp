@@ -10,7 +10,7 @@ DWIDGET_USE_NAMESPACE
 int main(int argc, char *argv[])
 {
 
-    DApplication::loadDXcbPlugin();  //让bar处在标题栏中
+    //DApplication::loadDXcbPlugin();  //让bar处在标题栏中
     DApplication dtk(argc, argv);
      dtk.setAttribute(Qt::AA_UseHighDpiPixmaps);
      dtk.loadTranslator();
@@ -18,10 +18,10 @@ int main(int argc, char *argv[])
      dtk.setApplicationVersion(DApplication::buildVersion("1.0"));
      dtk.setApplicationAcknowledgementPage("https://blog.8mi.tech");
      dtk.setProductIcon(QIcon(":/logo.png"));  //设置Logo
-     dtk.setProductName("8Mi-ClashControllerUI");
-     dtk.setApplicationName("8Mi-ClashControllerUI"); //只有在这儿修改窗口标题才有效
+     dtk.setProductName("8Mi-ClashLUI");
+     dtk.setApplicationName("8Mi-ClashLUI"); //只有在这儿修改窗口标题才有效
      dtk.setApplicationLicense("GPL-3.0");
-     dtk.setApplicationDescription("本程序配合8Mi-ClashController这个项目使用");
+     dtk.setApplicationDescription("本程序配合8Mi-ClashLCI这个项目使用");
      dtk.setApplicationAcknowledgementVisible(true);
      dtk.setWindowIcon(QIcon(":/logo.png"));
 
